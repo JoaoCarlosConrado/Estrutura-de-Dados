@@ -1,3 +1,5 @@
 Cangurus
 others
 *.exe
+build
+CMakeLists.txt
