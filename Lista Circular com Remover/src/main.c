@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "No.h"
+#include "../lib/No.h"
 
 NO *inicio;
 int tam = 0;
