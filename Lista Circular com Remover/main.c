@@ -20,8 +20,6 @@ void add (int id, int sexo, int num_filhotes){
         novo->ant = fim;
         inicio->ant = novo;
         fim->prox = novo;
-        if(inicio->prox == inicio)
-            inicio->prox = novo;
     }
     tam++;
 }
