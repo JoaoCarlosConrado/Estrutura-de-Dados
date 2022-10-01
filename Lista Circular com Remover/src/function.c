@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include "../lib/No.h"
 
-NO *add (int id, int sexo, int num_filhotes,NO *inicio){
+NO *add (int id, int sexo, int num_filhotes,NO *inicio){//Adiciona um item à lista
     NO *novo = malloc (sizeof(NO));
     novo->id = id;
     novo->sexo = sexo;
@@ -21,7 +21,7 @@ NO *add (int id, int sexo, int num_filhotes,NO *inicio){
     return inicio;
 }
 
-NO *del(int id,NO *inicio, int tam){
+NO *del(int id,NO *inicio, int tam){//remove um item da lista
     NO *aux = inicio;
     for(int i=0; i<tam ;i++){
         if(id == aux->id)
@@ -44,7 +44,7 @@ NO *del(int id,NO *inicio, int tam){
     return inicio;
 }
 
-int soma (NO *no, NO *inicio){
+int soma (NO *no, NO *inicio){//Retorna a soma dos filhotes da lista
     if(no == NULL)
         return 0;
     if(no->prox == inicio)
@@ -53,7 +53,7 @@ int soma (NO *no, NO *inicio){
         return no->num_filhotes + soma(no->prox, inicio);
 }
 
-void imprimir(NO *inicio, int tam){
+void imprimir(NO *inicio, int tam){//imprime os itens da lista
     NO *aux = inicio;
     for(int i=0; i<tam ;i++){
         printf("%d\n", aux->id);
@@ -61,7 +61,7 @@ void imprimir(NO *inicio, int tam){
     }
 }
 
-int tam(NO *inicio){
+int tam(NO *inicio){//Retorna o tamanho da lista
     int tamanho = 0;
     NO *aux = inicio->prox;
     if(inicio != NULL)
