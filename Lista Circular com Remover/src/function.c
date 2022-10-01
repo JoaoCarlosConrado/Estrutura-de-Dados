@@ -17,8 +17,6 @@ NO *add (int id, int sexo, int num_filhotes,NO *inicio){
         novo->ant = fim;
         inicio->ant = novo;
         fim->prox = novo;
-        if(inicio->prox == inicio)
-            inicio->prox = novo;
     }
     return inicio;
 }
