@@ -61,6 +61,16 @@ void imprimir(NO *inicio, int tam){//imprime os itens da lista
     }
 }
 
+void imprimir_no(NO *no, NO *inicio){
+    if(no->prox == inicio)
+        printf("%d\n", no->id);
+    if(no->prox != inicio){
+        printf("%d\n", no->id);
+        imprimir_no(no->prox, inicio);
+        
+    }
+}
+
 int tam(NO *inicio){//Retorna o tamanho da lista
     int tamanho = 0;
     NO *aux = inicio->prox;

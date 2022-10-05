@@ -14,6 +14,6 @@ int main(){
     //inicio = del(2, inicio, tam(inicio));
     //inicio = del(5, inicio, tam(inicio));
     printf("Filhotes: %d\n", soma(inicio, inicio));
-    imprimir(inicio, tam(inicio));
+    imprimir_no(inicio, inicio);
     return 0;
 }
