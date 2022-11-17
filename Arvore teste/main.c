@@ -181,6 +181,7 @@ NO *remover(NO *raiz, int chave){
             }else{
                 raiz->right = remover(raiz->right, chave);
             }
+            return raiz;
         }
 
     }
